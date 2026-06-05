@@ -1,0 +1,15 @@
+# Intrinsic Mind AI Solutions
+
+> Enterprise AI Orchestration, Strategic Advisory, Governance, and Data Readiness Consulting.
+
+## Core Services
+
+- [AI Strategic Advisory & Governance](/services/ai-strategic-advisory-governance): Custom ownership structures, risk control protocols, ROI dashboards, and full active environment audits.
+- [Data Foundation Readiness](/services/data-foundation-readiness): Comprehensive data environment audits, dependency mapping, reference integrity fixes, and AI-ready validation checks.
+- [Chat & Automation Agents](/services/chat-automation-agents): Custom high-friction workflow automations (intake, triage, approvals), ServiceNow/Salesforce integrations, and context-aware chat agents.
+
+## Information & Inquiries
+
+- [About Us](/aboutus): Profile of Kevin Young (Founder), with 15+ years of enterprise cloud architecture and engineering VP leadership.
+- [Contact Us](/contactus): Link to book a free 30-minute AI strategy consulting session directly with Kevin Young.
+- [Home Page](/)

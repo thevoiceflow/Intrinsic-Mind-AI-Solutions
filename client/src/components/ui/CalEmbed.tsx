@@ -11,8 +11,37 @@ type CalEmbedProps = {
 export default function CalEmbed({ id = "cal-embed", height = "580px", isFooter = false }: CalEmbedProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
+    if (!containerRef.current) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setShouldLoad(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "400px" } // Load when it's within 400px of the viewport
+    );
+
+    observer.observe(containerRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!shouldLoad) return;
+
     const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/kevin-young-intrinsicmind/30min?hide_gdpr_banner=1";
     let observer: MutationObserver | null = null;
     let timeoutId: NodeJS.Timeout | null = null;
@@ -81,7 +110,7 @@ export default function CalEmbed({ id = "cal-embed", height = "580px", isFooter 
         clearTimeout(timeoutId);
       }
     };
-  }, []);
+  }, [shouldLoad]);
 
   return (
     <div

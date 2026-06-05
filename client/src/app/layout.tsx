@@ -22,11 +22,87 @@ const tenorSans = Tenor_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Intrinsic Mind",
-  description: "INTRINSIC MIND AI SOLUTIONS",
+  metadataBase: new URL("https://intrinsicmind.ai"),
+  title: {
+    default: "Intrinsic Mind AI Solutions",
+    template: "%s | Intrinsic Mind AI Solutions",
+  },
+  description: "Tailored AI Chat & Automation Agents built for enterprise efficiency. Eliminate AI chaos with structured AI strategic advisory, data readiness, and custom workflows.",
+  keywords: ["AI Orchestration", "Enterprise AI Solutions", "AI Strategic Advisory", "AI Governance", "Data Foundation Readiness", "Chat Agents", "Workflow Automation", "Kevin Young"],
   icons: {
     icon: "/assets/favicon.webp",
+    shortcut: "/assets/favicon.webp",
+    apple: "/assets/favicon.webp",
   },
+  openGraph: {
+    title: "Intrinsic Mind AI Solutions",
+    description: "Tailored AI Chat & Automation Agents built for enterprise efficiency. Eliminate AI chaos with structured AI strategic advisory, data readiness, and custom workflows.",
+    url: "https://intrinsicmind.ai",
+    siteName: "Intrinsic Mind AI Solutions",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/assets/Logo-light.webp",
+        width: 800,
+        height: 600,
+        alt: "Intrinsic Mind AI Solutions Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Intrinsic Mind AI Solutions",
+    description: "Tailored AI Chat & Automation Agents built for enterprise efficiency. Eliminate AI chaos with structured AI strategic advisory, data readiness, and custom workflows.",
+    images: ["/assets/Logo-light.webp"],
+  },
+  alternates: {
+    canonical: "https://intrinsicmind.ai",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+const orgAndWebSiteSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://intrinsicmind.ai/#organization",
+      "name": "Intrinsic Mind AI Solutions",
+      "url": "https://intrinsicmind.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://intrinsicmind.ai/assets/Logo-light.webp"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Kevin Young",
+        "jobTitle": "Founder"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/intrinsic-mind-ai-solutions"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://intrinsicmind.ai/#website",
+      "url": "https://intrinsicmind.ai",
+      "name": "Intrinsic Mind AI Solutions",
+      "publisher": {
+        "@id": "https://intrinsicmind.ai/#organization"
+      }
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -40,8 +116,14 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${tenorSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgAndWebSiteSchema) }}
+        />
         <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
 }
+
+

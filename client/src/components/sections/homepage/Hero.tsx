@@ -9,6 +9,9 @@ const heroAssets = {
 export default function Hero() {
 	return (
 		<section className="relative z-20 overflow-visible bg-[#00162a] pb-0 pt-[140px] md:pt-[120px] lg:pt-[180px] text-white">
+			{/* Hoist preload link to document head for LCP optimization */}
+			<link rel="preload" href={heroAssets.vector} as="image" fetchPriority="high" />
+			
 			<div className="relative mx-auto flex w-full max-w-[1280px] flex-col items-center gap-[32px] md:gap-[48px] lg:gap-[64px] px-6 lg:px-16">
 				<FadeIn delay={0.1} direction="none" className="flex flex-col items-center gap-8 text-center relative z-10">
 					<div className="flex w-fit flex-wrap justify-center items-center gap-2 sm:gap-2.5 rounded-full border border-white/20 bg-white/10 px-4 sm:px-5 py-2 text-[11px] sm:text-[13px] uppercase tracking-[0.1em] sm:tracking-[0.18em] text-white/90 backdrop-blur-sm">
@@ -41,7 +44,13 @@ export default function Hero() {
 				</FadeIn>
 
 				<div aria-hidden className="pointer-events-none absolute left-1/2 top-[230px] z-0 w-full max-w-[1350px] -translate-x-1/2">
-					<img alt="" className="h-auto w-full object-contain opacity-95" src={heroAssets.vector} />
+					<img
+						alt=""
+						className="h-auto w-full object-contain opacity-95"
+						src={heroAssets.vector}
+						fetchPriority="high"
+						loading="eager"
+					/>
 				</div>
 
 				<div className="relative z-[60] -mb-[100px] md:-mb-[100px] lg:-mb-[200px] flex w-full max-w-[1062px] translate-y-1/2 justify-center">
