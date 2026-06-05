@@ -17,7 +17,7 @@ type SplitCtaButtonProps = {
 const sizeStyles = {
 	sm: {
 		outer: "h-10",
-		label: "h-8 px-4 text-[14px]",
+		label: "h-8 px-4 text-[16px] md:text-[14px]",
 		icon: "h-8 w-8",
 		iconSize: "h-4 w-4",
 	},

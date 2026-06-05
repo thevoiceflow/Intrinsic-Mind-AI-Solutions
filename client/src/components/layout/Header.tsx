@@ -206,7 +206,7 @@ export default function Header({ className = "", logoVariant = "dark" }: HeaderP
 						</nav>
 						<div className="mt-10 flex">
 							<Link href="/contactus" onClick={() => setIsMobileMenuOpen(false)} className="flex h-14 w-full items-center justify-center rounded-full bg-[#626ee3]/20 p-1">
-								<span className="flex h-12 flex-1 items-center justify-center rounded-full bg-[#626ee3] px-5 text-[18px] font-medium text-white transition-transform hover:scale-105">
+								<span className="flex h-12 flex-1 items-center justify-center rounded-full bg-[#626ee3] px-5 text-[16px] font-medium text-white transition-transform hover:scale-105">
 									Book Consultation
 								</span>
 							</Link>

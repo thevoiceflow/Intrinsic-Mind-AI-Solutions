@@ -55,7 +55,7 @@ export default function AboutHero() {
 				<div className="grid gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)]">
 					<FadeIn className="space-y-6 order-2 lg:order-1">
 						<div className="space-y-4">
-							<h1 className="text-[32px] font-semibold leading-[1.2] text-[#101828] md:text-[36px] ">
+							<h1 className="text-[36px] sm:text-[32px] md:text-[36px] font-semibold leading-[1.2] text-[#101828]">
 								From Enterprise Architect to AI Transformation Leader
 							</h1>
 						</div>

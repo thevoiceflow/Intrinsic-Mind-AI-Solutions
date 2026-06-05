@@ -33,7 +33,7 @@ export default function ContactHero() {
 				</div>
 
 				<FadeIn className="mt-6 max-w-[780px] text-center">
-					<h1 className="text-[48px] md:text-[48px] lg:text-[44px] font-bold leading-[1.2] text-[#1e293b]">
+					<h1 className="text-[36px] sm:text-[32px] md:text-[48px] lg:text-[44px] font-bold leading-[1.2] text-[#1e293b]">
 						Book Your Free AI Strategy Session
 					</h1>
 				</FadeIn>

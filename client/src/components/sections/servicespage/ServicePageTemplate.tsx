@@ -126,7 +126,7 @@ export default function ServicePageTemplate({
               {content.badge}
             </div>
 
-            <h1 className="text-[48px] font-bold leading-[1.2] tracking-[-1px] text-white md:text-[48px] lg:text-[48px]">
+            <h1 className="text-[36px] sm:text-[32px] md:text-[48px] lg:text-[48px] font-bold leading-[1.2] tracking-[-1px] text-white">
               <span className="block">{content.heroTitle[0]}</span>
               <span className="block">{content.heroTitle[1]}</span>
               <span className="block text-[#7aa2ff]">{content.heroTitle[2]}</span>
