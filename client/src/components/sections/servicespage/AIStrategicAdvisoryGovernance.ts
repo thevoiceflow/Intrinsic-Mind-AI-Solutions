@@ -37,16 +37,19 @@ export const aiStrategicAdvisoryGovernanceContent: ServicePageContent = {
       title: "Different teams, different tools no shared framework.",
       description:
         "Claude, OpenAI, Gemini, internal agents running in parallel with zero orchestration.",
+      image: "/assets/services/ai-strategic-advisory-governance/Situation-1.webp",
     },
     {
       title: "No one's measuring output.",
       description:
         "Tools are running but leadership can't tell what they're delivering or where value is leaking.",
+      image: "/assets/services/ai-strategic-advisory-governance/Situation-2.webp",
     },
     {
       title: "No clear accountability.",
       description:
         "When something goes wrong, there's no chain to follow. Risk sits invisible until it surfaces publicly.",
+      image: "/assets/services/ai-strategic-advisory-governance/Situation-3.webp",
     },
   ],
   buildHeading: [
@@ -110,21 +113,25 @@ export const aiStrategicAdvisoryGovernanceContent: ServicePageContent = {
       title: "Complete AI Environment Map",
       description:
         "A clear picture of every AI tool in your org — where the gaps are, where the overlap is, and where you're exposed to risk.",
+      image: "/assets/services/ai-strategic-advisory-governance/Get-1.webp",
     },
     {
       title: "Governance Framework",
       description:
         "Tool orchestration rules, risk control protocols, and ROI reporting structures built for how your leadership team operates.",
+      image: "/assets/services/ai-strategic-advisory-governance/Get-2.webp",
     },
     {
       title: "Phased AI Roadmap",
       description:
         "Use cases ranked by business value, sequenced by what your organization can realistically execute quarter by quarter.",
+      image: "/assets/services/ai-strategic-advisory-governance/Get-3.webp",
     },
     {
       title: "Cross-Functional Alignment",
       description:
         "IT, operations, and business leadership on the same page — knowing what gets built, when it ships, and who owns it.",
+      image: "/assets/services/ai-strategic-advisory-governance/Get-4.webp",
     },
   ],
   footerStatValue: "40+",

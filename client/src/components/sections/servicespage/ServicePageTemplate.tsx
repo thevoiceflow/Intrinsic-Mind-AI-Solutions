@@ -14,6 +14,7 @@ type HeroStat = {
 type SituationCard = {
   title: string;
   description: string;
+  image?: string;
 };
 
 type BuildCard = {
@@ -31,6 +32,7 @@ type PriorityItem = {
 type Deliverable = {
   title: string;
   description: string;
+  image?: string;
 };
 
 export type ServicePageContent = {
@@ -226,7 +228,7 @@ export default function ServicePageTemplate({
                       <img
                         alt=""
                         className="h-full w-full object-contain"
-                        src="/assets/services/Icon.webp"
+                        src={card.image || "/assets/services/Icon.webp"}
                       />
                     </div>
                     <div>
@@ -437,7 +439,7 @@ export default function ServicePageTemplate({
               >
                 <div className="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-2xl bg-white/60">
                   <img
-                    src="/assets/services/Icon.webp"
+                    src={item.image || "/assets/services/Icon.webp"}
                     alt=""
                     className="h-[60px] w-[60px] object-contain"
                   />

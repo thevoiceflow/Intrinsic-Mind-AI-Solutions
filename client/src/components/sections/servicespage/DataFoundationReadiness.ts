@@ -39,16 +39,19 @@ export const dataFoundationReadinessContent: ServicePageContent = {
       title: "The infrastructure is not structured for AI.",
       description:
         "Records are inconsistent across systems, and the core model behind them is not reliable enough for automation or agents.",
+      image: "/assets/services/data-foundation-readiness/Situation-1.webp",
     },
     {
       title: "Governance does not exist where it matters.",
       description:
         "Field requirements, reference integrity, and mandatory standards are either missing or applied unevenly.",
+      image: "/assets/services/data-foundation-readiness/Situation-2.webp",
     },
     {
       title: "Readiness breaks before deployment begins.",
       description:
         "Teams want AI, but the load sequence and upstream dependencies are unclear, so projects stall before they deliver value.",
+      image: "/assets/services/data-foundation-readiness/Situation-3.webp",
     },
   ],
   buildHeading: [
@@ -112,21 +115,25 @@ export const dataFoundationReadinessContent: ServicePageContent = {
       title: "Full Data Environment Audit",
       description:
         "A complete view of what is clean, what is broken, and what is missing across the systems AI will depend on.",
+      image: "/assets/services/data-foundation-readiness/Get-1.webp",
     },
     {
       title: "Structured Remediation Plan",
       description:
         "A sequenced path to fix the foundation, including dependencies, load order, and the work required before AI goes live.",
+      image: "/assets/services/data-foundation-readiness/Get-2.webp",
     },
     {
       title: "Cross-Layer Governance Rules",
       description:
         "Field requirements, reference integrity standards, and mandatory controls applied consistently across the data stack.",
+      image: "/assets/services/data-foundation-readiness/Get-3.webp",
     },
     {
       title: "Validated AI-Ready Foundation",
       description:
         "A data environment that has been checked against readiness criteria and can support agents and automation reliably.",
+      image: "/assets/services/data-foundation-readiness/Get-4.webp",
     },
   ],
   footerStatValue: "41+",

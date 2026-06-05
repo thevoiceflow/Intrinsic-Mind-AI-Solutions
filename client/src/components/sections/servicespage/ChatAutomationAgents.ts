@@ -38,16 +38,19 @@ export const chatAutomationAgentsContent: ServicePageContent = {
       title: "The same high-friction tasks repeat every day.",
       description:
         "Risk assessments, approvals, form chains, and service requests keep moving through the same manual steps with no meaningful leverage.",
+      image: "/assets/services/chat-automation-agents/Situation-1.webp",
     },
     {
       title: "Answers are trapped behind tools and inboxes.",
       description:
         "Teams wait on another person or another system for information that should be returned instantly in context.",
+      image: "/assets/services/chat-automation-agents/Situation-2.webp",
     },
     {
       title: "Nobody wants to automate the wrong thing first.",
       description:
         "The real challenge is knowing where to start without breaking the rest of the process or losing the human checkpoints that still matter.",
+      image: "/assets/services/chat-automation-agents/Situation-3.webp",
     },
   ],
   buildHeading: [
@@ -111,21 +114,25 @@ export const chatAutomationAgentsContent: ServicePageContent = {
       title: "Measured Workflow Automation",
       description:
         "Specific processes moved off your team’s plate, documented clearly and tracked against tangible before-and-after output.",
+      image: "/assets/services/chat-automation-agents/Get-1.webp",
     },
     {
       title: "Embedded Chat Agents",
       description:
         "Instant answers delivered inside the tools your team already uses, without switching contexts or waiting in queues.",
+      image: "/assets/services/chat-automation-agents/Get-2.webp",
     },
     {
       title: "End-to-End Automation Agents",
       description:
         "Agents handling intake, approvals, routing, and resolution with the right human checkpoints still in place.",
+      image: "/assets/services/chat-automation-agents/Get-3.webp",
     },
     {
       title: "Clear Leadership Reporting",
       description:
         "Output reporting that shows what changed, where time was saved, and what the automation is worth in production.",
+      image: "/assets/services/chat-automation-agents/Get-4.webp",
     },
   ],
   footerStatValue: "42%",
