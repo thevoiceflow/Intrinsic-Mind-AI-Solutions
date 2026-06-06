@@ -54,13 +54,25 @@ export default function Hero() {
 				</div>
 
 				<div className="relative z-[60] -mb-[100px] md:-mb-[100px] lg:-mb-[200px] flex w-full max-w-[1062px] translate-y-1/2 justify-center">
-					<FadeIn delay={0.5} fullWidth className="relative z-[70] h-[300px] sm:h-[400px]  lg:h-[600px] lg:-mt-50 w-full overflow-hidden rounded-[20px] lg:rounded-[28px] border-2 border-[#abd6ff66]">
+					<FadeIn delay={0.5} fullWidth className="relative z-[70] h-[300px] sm:h-[400px] lg:h-[600px] lg:-mt-50 w-full overflow-hidden rounded-[20px] lg:rounded-[28px] border-2 border-[#abd6ff66] group">
 						<img
 							alt="Video thumbnail"
-							className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+							className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
 							src={heroAssets.videoThumb}
 							loading="eager"
 						/>
+						{/* Dark backdrop overlay for text contrast */}
+						<div className="absolute inset-0 bg-black/60 transition-colors duration-500 group-hover:bg-black/50" />
+						
+						{/* Centered text overlay */}
+						<div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-6 text-center z-10 select-none">
+							<p className="text-[24px] sm:text-[36px] lg:text-[40px] font-regular text-white tracking-tight leading-tight drop-shadow-md">
+								Intrinsic New Product Demo
+							</p>
+							<p className="text-[18px] sm:text-[24px] lg:text-[40px] font-semibold text-[#8ea7ff] tracking-wide drop-shadow-md">
+								Coming July 2026
+							</p>
+						</div>
 					</FadeIn>
 				</div>
 			</div>
