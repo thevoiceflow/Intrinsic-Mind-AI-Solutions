@@ -11,7 +11,11 @@ export default function MainLayout({
 }) {
   const pathname = usePathname();
 
-  const isLightLogoPage = pathname === "/aboutus" || pathname === "/contactus";
+  const isLightLogoPage =
+    pathname === "/aboutus" ||
+    pathname === "/contactus" ||
+    pathname === "/privacy" ||
+    pathname === "/terms";
   const hideFooterHero = pathname === "/contactus";
 
   // For regular routes, render with Header and Footer

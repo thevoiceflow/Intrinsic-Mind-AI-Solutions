@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 import Logo from "../ui/Logo";
 import Link from "next/link";
 import CalEmbed from "../ui/CalEmbed";
-import { primaryServicePath } from "../sections/servicespage/serviceLinks";
+import { primaryServicePath, serviceLinks } from "../sections/servicespage/serviceLinks";
 
 
 
@@ -52,14 +52,26 @@ export default function Footer({ showHero = true }: FooterProps) {
 						<div className="space-y-4">
 							<p className="font-semibold">Company</p>
 							<Link className="block transition-colors hover:text-[#2f6ff6]" href={primaryServicePath}>How it works</Link>
-							<Link className="block transition-colors hover:text-[#2f6ff6]" href={primaryServicePath}>Services</Link>
+							{serviceLinks.map((service) => (
+								<Link
+									key={service.href}
+									className="block transition-colors hover:text-[#2f6ff6]"
+									href={service.href}
+								>
+									{service.label}
+								</Link>
+							))}
 							<Link className="block transition-colors hover:text-[#2f6ff6]" href="/aboutus">About</Link>
 							<Link className="block transition-colors hover:text-[#2f6ff6]" href="/contactus">Contact us</Link>
 						</div>
 						<div className="space-y-4">
 							<p className="font-semibold">Legal</p>
-							<p className="cursor-pointer transition-colors hover:text-[#2f6ff6]">Privacy Policy</p>
-							<p className="cursor-pointer transition-colors hover:text-[#2f6ff6]">Terms of Service</p>
+							<Link className="block transition-colors hover:text-[#2f6ff6]" href="/privacy">
+								Privacy Policy
+							</Link>
+							<Link className="block transition-colors hover:text-[#2f6ff6]" href="/terms">
+								Terms of Service
+							</Link>
 						</div>
 					</div>
 				</div>
